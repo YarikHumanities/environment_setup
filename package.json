@@ -8,7 +8,7 @@
     "eslint:fix": "eslint api/**/*.js --fix --ignore-path .gitignore",
     "prettier": "prettier api/**/*.js --check --ignore-path .gitignore",
     "prettier:fix": "prettier api/**/*.js --write --ignore-path .gitignore",
-    "pre-commit-check": "npm run eslint && npm run eslint:fix && npm run prettier && npm run prettier:fix",
+    "pre-commit-check": "npm run eslint && npm run prettier",
     "prepare": "husky install"
   },
   "lint-staged": {

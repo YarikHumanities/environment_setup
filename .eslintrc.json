@@ -5,7 +5,6 @@
   },
   "plugins": ["sonarjs"],
   "extends": ["eslint:recommended", "metarhia"],
-  "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
