@@ -12,7 +12,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*api/**/*.js": "npm run eslint && npm run prettier"
+    "api/**/*.js": "npm run eslint && npm run prettier"
   },
   "repository": {
     "type": "git",
