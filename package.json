@@ -1,0 +1,40 @@
+{
+  "name": "environment_setup",
+  "version": "1.0.0",
+  "description": "environment setup for Node.js developement",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint api/**/*.js --ignore-path .gitignore",
+    "eslint:fix": "eslint api/**/*.js --fix --ignore-path .gitignore",
+    "prettier": "prettier api/**/*.js --check --ignore-path .gitignore",
+    "prettier:fix": "prettier api/**/*.js --write --ignore-path .gitignore",
+    "pre-commit-check": "npm run eslint && npm run prettier",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "api/**/*.js": [
+      "eslint",
+      "prettier"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YarikHumanities/environment_setup.git"
+  },
+  "keywords": [],
+  "author": "Yaroslav Matsapura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YarikHumanities/environment_setup/issues"
+  },
+  "homepage": "https://github.com/YarikHumanities/environment_setup#readme",
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-metarhia": "^8.1.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-sonarjs": "^0.16.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1"
+  }
+}
